@@ -19,3 +19,13 @@ samsungGalaxyS6.printInfo();
 var onePlusOne = new Phone('OnePlus', 'white', 1300);
 
 onePlusOne.printInfo();
+
+Phone.prototype.applyDiscount = function(discount) {
+	this.price = this.price - discount;
+}
+
+iPhone6s.printInfo();
+
+iPhone6s.applyDiscount(100);
+
+iPhone6s.printInfo();
